@@ -191,7 +191,6 @@ func Run(ctx *cli.Context) error {
 		UseGoPath: false,
 		Files: []file{
 			{"main.go", tmpl.MainSRV},
-			{"generate.go", tmpl.GenerateFile},
 			{"handler/" + dir + ".go", tmpl.HandlerSRV},
 			{"proto/" + dir + ".proto", tmpl.ProtoSRV},
 			{"Dockerfile", tmpl.DockerSRV},
