@@ -190,7 +190,6 @@ func Run(ctx *cli.Context) error {
 		GoPath:    goPath,
 		UseGoPath: false,
 		Files: []file{
-			{"micro.mu", tmpl.Service},
 			{"main.go", tmpl.MainSRV},
 			{"generate.go", tmpl.GenerateFile},
 			{"handler/" + dir + ".go", tmpl.HandlerSRV},
@@ -198,7 +197,6 @@ func Run(ctx *cli.Context) error {
 			{"Dockerfile", tmpl.DockerSRV},
 			{"Makefile", tmpl.Makefile},
 			{"README.md", tmpl.Readme},
-			{".gitignore", tmpl.GitIgnore},
 		},
 	}
 
